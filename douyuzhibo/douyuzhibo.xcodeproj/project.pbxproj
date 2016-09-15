@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E7C8400A1D8B16C500973B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C840091D8B16C500973B00 /* AppDelegate.swift */; };
-		E7C8400C1D8B16C500973B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8400B1D8B16C500973B00 /* ViewController.swift */; };
 		E7C8400F1D8B16C500973B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C8400D1D8B16C500973B00 /* Main.storyboard */; };
 		E7C840111D8B16C500973B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C840101D8B16C500973B00 /* Assets.xcassets */; };
 		E7C840141D8B16C500973B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C840121D8B16C500973B00 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		E7C840061D8B16C500973B00 /* douyuzhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyuzhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C840091D8B16C500973B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7C8400B1D8B16C500973B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7C8400E1D8B16C500973B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7C840101D8B16C500973B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7C840131D8B16C500973B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,75 @@
 		E7C840081D8B16C500973B00 /* douyuzhibo */ = {
 			isa = PBXGroup;
 			children = (
+				E7C8401B1D8B247200973B00 /* Classes */,
 				E7C840091D8B16C500973B00 /* AppDelegate.swift */,
-				E7C8400B1D8B16C500973B00 /* ViewController.swift */,
 				E7C8400D1D8B16C500973B00 /* Main.storyboard */,
 				E7C840101D8B16C500973B00 /* Assets.xcassets */,
 				E7C840121D8B16C500973B00 /* LaunchScreen.storyboard */,
 				E7C840151D8B16C500973B00 /* Info.plist */,
 			);
 			path = douyuzhibo;
+			sourceTree = "<group>";
+		};
+		E7C8401B1D8B247200973B00 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E7C8401F1D8B247200973B00 /* Main[主] */,
+				E7C8401D1D8B247200973B00 /* Home[首页] */,
+				E7C8401E1D8B247200973B00 /* Live[直播] */,
+				E7C8401C1D8B247200973B00 /* Follow[关注] */,
+				E7C840201D8B247200973B00 /* Profile[我的] */,
+				E7C840211D8B247200973B00 /* Tools[工具类] */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E7C8401C1D8B247200973B00 /* Follow[关注] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Follow[关注]";
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		E7C8401D1D8B247200973B00 /* Home[首页] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Home[首页]";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E7C8401E1D8B247200973B00 /* Live[直播] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Live[直播]";
+			path = Live;
+			sourceTree = "<group>";
+		};
+		E7C8401F1D8B247200973B00 /* Main[主] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Main[主]";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E7C840201D8B247200973B00 /* Profile[我的] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Profile[我的]";
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E7C840211D8B247200973B00 /* Tools[工具类] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tools[工具类]";
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C8400C1D8B16C500973B00 /* ViewController.swift in Sources */,
 				E7C8400A1D8B16C500973B00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,12 +319,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				DEVELOPMENT_TEAM = 3FRA3TZ6W3;
 				INFOPLIST_FILE = douyuzhibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lijiongjiong.douyuzhibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,12 +335,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				DEVELOPMENT_TEAM = 3FRA3TZ6W3;
 				INFOPLIST_FILE = douyuzhibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lijiongjiong.douyuzhibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
